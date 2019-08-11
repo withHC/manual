@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WithHC Manual</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>WithHC 홈페이지 수정 가이드</h1>
+    <article>
+        <nav class="toc">
+            <ul>
+                <li>
+                    <a href="#home">홈화면</a>
+                    <ul>
+                        <li><a href="#home-1">비디오 수정</a></li>
+                        <li><a href="#home-2">슬라이더(빌보드) 수정</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#article">글 추가</a>
+                    <ul>
+                        <li><a href="#article-1">뉴스</a></li>
+                        <li><a href="#article-2">아티스트</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+				<path stroke="#444" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+			</svg>
+        </nav>
+        <section id="home" class="num-format">
+            <h2>홈 화면</h2>
+            <div id="home-1">
+                <h3>비디오 수정</h3>
+                <img src="./assets/images/home.js.png" alt="">
+                <p>테마 디자인 > Theme Editor으로 이동 후 테마 파일 영역에서 assets > js > home.js를 클릭하면 위 화면이 나옵니다.</p>
+                <p>const id="수정할 부분"</p>
+                <p>수정할 부분에 유튜브 비디오의 ID를 넣습니다. 해당 비디오의 url에서 watch?v= 뒤에 적힌 부분이 비디오의 ID입니다.</p>
+            </div>
+            <div id="home-2">
+                <h3>슬라이더(빌보드) 수정</h3>
+                <img src="./assets/images/slider.png" alt="">
+                <p>미디어에서 빌보드에 넣을 이미지를 업로드 후, 이미지를 클릭하면 위 화면이 표시됩니다.</p>
+                <p>빨간 테두리에 표시된 링크를 복사합니다. 링크에 마우스를 올리고 좌클릭 3번이면 간단하게 선택하실 수 있습니다.</p>
+                <img src="./assets/images/slider2.PNG" alt="">
+                <p>테마 디자인 > Theme Editor으로 이동 후 테마 파일 영역에서 홈페이지를 클릭하면 위 화면이 나옵니다.</p>
+                <p>빨간 테두리 내부를 수정하시면 됩니다.</p>
+                <p>background-image:url(복사한 url을 여기에 붙여 넣습니다.)</p>
+            </div>
+        </section>
+        <section id="article" class="num-format">
+            <h2>글 추가</h2>
+            <div id="article-1">
+                <h3>뉴스</h3>
+                <img src="./assets/images/news-youtube.PNG" alt="">
+                <p>뉴스에 포함된 유튜브는 디바이스 크기에 맞게 알아서 너비를 맞춰 중앙 정렬됩니다.</p>
+                <p>별도로 중앙 정렬을 사용하면 레이아웃이 망가지니, 중앙 정렬을 삼가주세요.</p>
+            </div>
+            <div id="article-2">
+                <h3>아티스트</h3>
+                <p>글 > 새로 추가 후에 우측 화면 문서 > 카테고리에서 해당 아티스트의 분류를 맞춰주세요. (Actor, Musician)</p>
+                <img src="./assets/images/artist-1.PNG" alt="">
+                <p>제일 먼저 왼쪽에 보이는 + 버튼 클릭 후 레이아웃 요소 > 미디어 및 텍스트를 클릭합니다.</p>
+                <img src="./assets/images/artist-2.PNG" alt="">
+                <p>위 버튼을 클릭해 헤딩 요소로 변경을 합니다.</p>
+                <p>h3을 클릭 후 아티스트 분류를 적습니다 (Musician, Actor)</p>
+                <p>엔터 후에 다시 헤딩 요소로 변경 후 h2를 클릭하고, 아티스트의 이름을 적습니다.</p>
+                <p>만약 멤버가 있다면 위 과정을 반복하되, h3으로 변경하는 과정은 생략합니다.</p>
+                <p>영문 / 한글 이름을 병기하는 경우, 둘 다 헤딩요소에서 h2를 클릭하여 진행합니다.</p>
+                <p><br></p>
+                <p>그 아래의 내용들은 별다른 수정 없이 입력하시면 됩니다.</p>
+                <img src="./assets/images/artist-2-1.PNG" alt="">
+                <p>소셜 버튼을 삽입할 땐, ctrl + shift + alt + M 을 입력하면 위와 같은 화면이 보입니다.</p>
+                <p></p>
+                <p>
+                    <div class="codeblock"><div>&lt;<span style="color: #e06c75;">p</span> <span style="color: #d19a66;">class</span>=<span style="color: #98c379;">"social"</span>&gt;</div><div>    &lt;<span style="color: #e06c75;">a</span> <span style="color: #d19a66;">href</span>=<span style="color: #98c379;">"인스타 링크"</span> <span style="color: #d19a66;">target</span>=<span style="color: #98c379;">"_blank"</span> <span style="color: #d19a66;">class</span>=<span style="color: #98c379;">"icon-instagram"</span>&gt;&lt;/<span style="color: #e06c75;">a</span>&gt;</div><div>    &lt;<span style="color: #e06c75;">a</span> <span style="color: #d19a66;">href</span>=<span style="color: #98c379;">"트위터 링크"</span> <span style="color: #d19a66;">target</span>=<span style="color: #98c379;">"_blank"</span> <span style="color: #d19a66;">class</span>=<span style="color: #98c379;">"icon-twitter"</span>&gt;&lt;/<span style="color: #e06c75;">a</span>&gt;</div><div>    &lt;<span style="color: #e06c75;">a</span> <span style="color: #d19a66;">href</span>=<span style="color: #98c379;">"페이스북 링크"</span> <span style="color: #d19a66;">target</span>=<span style="color: #98c379;">"_blank"</span> <span style="color: #d19a66;">class</span>=<span style="color: #98c379;">"icon-facebook"</span>&gt;&lt;/<span style="color: #e06c75;">a</span>&gt;</div><div>    &lt;<span style="color: #e06c75;">a</span> <span style="color: #d19a66;">href</span>=<span style="color: #98c379;">"유튜브 링크"</span> <span style="color: #d19a66;">target</span>=<span style="color: #98c379;">"_blank"</span> <span style="color: #d19a66;">class</span>=<span style="color: #98c379;">"icon-youtube"</span>&gt;&lt;/<span style="color: #e06c75;">a</span>&gt;</div><div>    &lt;<span style="color: #e06c75;">a</span> <span style="color: #d19a66;">href</span>=<span style="color: #98c379;">"다음 카페 링크"</span> <span style="color: #d19a66;">target</span>=<span style="color: #98c379;">"_blank"</span> <span style="color: #d19a66;">class</span>=<span style="color: #98c379;">"icon-daumCafe"</span>&gt;&lt;/<span style="color: #e06c75;">a</span>&gt;</div><div>    &lt;<span style="color: #e06c75;">a</span> <span style="color: #d19a66;">href</span>=<span style="color: #98c379;">"vlive 링크"</span> <span style="color: #d19a66;">target</span>=<span style="color: #98c379;">"_blank"</span> <span style="color: #d19a66;">class</span>=<span style="color: #98c379;">"icon-vlive"</span>&gt;&lt;/<span style="color: #e06c75;">a</span>&gt;</div><div>&lt;/<span style="color: #e06c75;">p</span>&gt;</div></div>
+                </p>
+                <p>위 내용을 수정해서 붙여 넣으시면 됩니다.</p>
+                <img src="./assets/images/artist-3.PNG" alt="">
+                <p>Profile 영역은 레이아웃 요소 > 열을 사용합니다.</p>
+                <img src="./assets/images/artist-4.PNG" alt="">
+                <p>왼쪽엔 Profile, 오른쪽엔 내용을 작성하시면 됩니다.</p>
+                <img src="./assets/images/artist-5.PNG" alt="">
+                <p>마지막으로 갤러리는, 공통 블럭 > 갤러리를 사용합니다.</p>
+                <img src="./assets/images/artist-6.PNG" alt="">
+                <p>이미지를 첨부하신 후, 오른쪽 열을 5로 변경합니다.</p>
+            </div>
+        </section>
+    </article>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
