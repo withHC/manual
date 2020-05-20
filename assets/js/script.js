@@ -23,7 +23,7 @@ function scrollAnchors(h, a = null) {
 
 scrollTo(),
 
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('load', function() {
 
 	var toc = document.querySelector( '.toc' );
 	var tocPath = document.querySelector( '.toc-marker path' );
