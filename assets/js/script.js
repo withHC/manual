@@ -23,7 +23,7 @@ function scrollAnchors(h, a = null) {
 
 scrollTo(),
 
-window.onload = function() {
+window.addEventListener('DOMContentLoaded', function() {
 
 	var toc = document.querySelector( '.toc' );
 	var tocPath = document.querySelector( '.toc-marker path' );
@@ -150,4 +150,4 @@ window.onload = function() {
 
 	}
 
-};
+});
